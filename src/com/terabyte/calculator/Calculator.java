@@ -40,6 +40,9 @@ public class Calculator {
   }
 
   public boolean hasResult() {
-    return isSuccessful;
+    return isSuccessful && lastResult != null;
+  }
+  public Double getResult() {
+    return lastResult;
   }
 }
